@@ -1,7 +1,9 @@
-export default ProtoTypes.shape ({
-	name: ProtoTypes.string.isRequired,
-	email: ProtoTypes.string.isRequired,
-	photo: ProtoTypes.string.isRequired,
-	location: ProtoTypes.string.isRequired,
-	phone:ProtoTypes.string.isRequired,
+import React, {PropTypes} from 'react';
+
+export default PropTypes.shape ({
+	name: PropTypes.string.isRequired,
+	email: PropTypes.string.isRequired,
+	photo: PropTypes.string.isRequired,
+	location: PropTypes.string.isRequired,
+	phone: PropTypes.string.isRequired,
 });

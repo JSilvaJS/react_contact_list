@@ -1,27 +1,35 @@
 import React, {Component, PropTypes} from 'react';
 import UserShape from './user_shape';
+import UserData from './user_data';
+import UserDetails from './user_details';
+import Icon from './icon';
 
-getUser(user) {
+
+
+export default class UserList extends Component {
+	static propTypes = {
+		user: PropTypes.arrayOf(UserShape).isRequired,
+		onUserSelect: PropTypes.func.isRequired
+	}
+
+	getUser(user) {
 	let {onUserSelect} = this.props;
 	return(
-		<li onClick={onUserSelect.bind(null, user)}>
-			{user.name}
+		<li className="peeps_li" key={user.name} onClick={onUserSelect.bind(null, user)}>
+			<img className="peeps_img" src={user.photo}/>{user.name}
 		</li>
 		);
 }
 
-export default class UserList extends Component {
-	static propTypes = {
-		users: PropTypes.arrayof(UserShape).isRequired,
-		onUserSelect: PropTypes.func.isRequired
-	}
-
 	render() {
-		let {users, onUserSelect} = this.props;
+		let {user, onUserSelect} = this.props;
 		return(
 			<div className="user-list">
-				<h1>My Peeps</h1>
-				<ul>{users.map(::this.getUser)}</ul>
+				<div className="header_div">
+				<h1 className="peeps_header">My Peeps</h1>
+				</div>
+				<ul>{user.map(::this.getUser)}</ul>
+			</div>
 		);
 	}
 

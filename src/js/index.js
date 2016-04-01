@@ -4,7 +4,8 @@ import ReactDOM from 'react-dom';
 import UserDetails from './user_details';
 import UserShape from './user_shape';
 import UserData from './user_data';
-import UserList from './user_lists';
+import UserList from './user_list';
+
 
 
 let renderDetails = (user) => ReactDOM.render(
@@ -13,6 +14,8 @@ let renderDetails = (user) => ReactDOM.render(
 	);
 
 let renderList = () => ReactDOM.render (
-	<UserList user={user} onBack={renderDetails}/>
+	<UserList user={UserData} onUserSelect={renderDetails}/>
 	, document.querySelector('.app')
 	);
+
+renderList();
