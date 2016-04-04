@@ -3,13 +3,15 @@ import UserShape from './user_shape';
 import UserData from './user_data';
 import UserDetails from './user_details';
 import Icon from './icon';
+import FormView from './form_data';
 
 
 
 export default class UserList extends Component {
 	static propTypes = {
 		user: PropTypes.arrayOf(UserShape).isRequired,
-		onUserSelect: PropTypes.func.isRequired
+		onUserSelect: PropTypes.func.isRequired,
+		onNew: PropTypes.func.isRequired
 	}
 
 	getUser(user) {
@@ -22,11 +24,12 @@ export default class UserList extends Component {
 }
 
 	render() {
-		let {user, onUserSelect} = this.props;
+		let {user, onUserSelect, onNew } = this.props;
 		return(
 			<div className="user-list">
 				<div className="header_div">
 				<h1 className="peeps_header">My Peeps</h1>
+				<button onClick={onNew}>Add New Peep</button>
 				</div>
 				<ul>{user.map(::this.getUser)}</ul>
 			</div>
