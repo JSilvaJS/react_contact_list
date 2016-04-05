@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import SSF from 'react-simple-serial-form';
+import Icon from './icon';
 
 export default class FormView extends Component {
 	static propTypes = {
@@ -13,41 +14,41 @@ export default class FormView extends Component {
 	render() {
 		return (
 			<div className="form-view">
-				<div className="header_div>">
-				<h1>Add Peep</h1>
+				<div className="form_header_div">
+				<h1 className="form_header">Add Peep</h1>
 				</div>
 				<SSF onData={::this.dataHandler}>
-					<div>
+					<div className="form_input_div">
 						<label>
 							Picture:
 						<input type="img" name="photo"/>
 						</label> 
 					</div>
-					<div>
+					<div className="form_input_div">
 						<label>
 							Fullname:
 						<input type="text" name="name"/>
 						</label> 
 					</div>
-					<div>
+					<div className="form_input_div">
 						<label>
 							Email:
 						<input type="email" name="email"/>
 						</label> 
 					</div>
-					<div>
+					<div className="form_input_div">
 						<label>
 							Phone:
 						<input type="tel" name="phone"/>
 						</label> 
 					</div>
-					<div>
+					<div className="form_input_div">
 						<label>
 							Location:
 						<input type="text" name="location"/>
 						</label> 
 					</div>
-					<button className="Add_Peeps_btn">Add New User</button>
+					<button className="add_peeps_btn"><Icon type="save"/></button>
 				</SSF>
 			</div> 
 		);

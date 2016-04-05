@@ -15,11 +15,11 @@ let tyler = {
 }
 
 let steven = {
-	name: 'Steven Spielberg',
-	email: 's_spielberg@dreamworks.com',
-	photo: 'http://a5.files.biography.com/image/upload/c_fill,cs_srgb,dpr_1.0,g_face,h_300,q_80,w_300/MTE5NTU2MzE2Mzc0MDA5MzU1.jpg',
-	location: 'Cincinnati, OH',
-	phone: '555-228-3210'
+	name: 'Lumpy Space Princess',
+	email: 'lsp@gmail.com',
+	photo: 'http://www.wikihow.com/images/a/ac/Draw-Lumpy-Space-Princess-from-Adventure-Time-Step-7.jpg',
+	location: 'Atlanta, Ga',
+	phone: '555-222-3210'
 }
 
 let stanley = {

@@ -18,7 +18,7 @@ export default class UserDetails extends Component {
 		return (
 			<div className="user-details">
 				<div className="avatar">
-					<button onClick={onBack}><Icon type="arrow-left"/></button>
+					<button className="ud_back" onClick={onBack}><Icon type="arrow-left"/></button>
 					<img className="ud_img" src={user.photo} alt={user.name}/>
 				</div>
 				<ul className="info">
