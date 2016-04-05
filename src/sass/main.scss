@@ -123,12 +123,12 @@ input {
 .form_input_div {
   display: inline-block;
   position: relative;
-  left: 10px;
-  top: 5px;
+  left: 60px;
+  top: 10px;
 }
 
 form {
-  height: 150px;
+  height: 360px;
 }
 
 .add_peeps_btn {
@@ -177,6 +177,22 @@ form {
       transition: .3s;
       text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     }
+}
+
+.drop-span {
+  position: relative;
+  left: 15px;
+  top: 90px;
+  z-index: 1;
+}
+
+.dropzone-img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  top: -25px;
+  left: 0px;
+  z-index: 0;
 }
 
 // .app{
