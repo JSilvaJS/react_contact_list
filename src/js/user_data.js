@@ -1,7 +1,7 @@
 let rocky = {
 	name: 'Rocky Balboa',
 	email: 'RockyTheRock@boxing.edu',
-	photo: 'https://upload.wikimedia.org/wikipedia/en/5/53/Rocky_balboa.jpeg',
+	photo: 'https://media.licdn.com/mpr/mpr/shrinknp_800_800/AAEAAQAAAAAAAAcEAAAAJDIxZGI0ODAzLWY1NDQtNDc0OS05NTcwLWJiOGUxNjA4YjU2MQ.jpg',
 	location: 'Philadelphia, PA',
 	phone: '555-328-8390'
 }

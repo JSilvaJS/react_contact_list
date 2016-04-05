@@ -29,7 +29,7 @@ export default class UserList extends Component {
 			<div className="user-list">
 				<div className="header_div">
 				<h1 className="peeps_header">My Peeps</h1>
-				<button onClick={onNew}>Add New Peep</button>
+				<button className="header_btn" onClick={onNew} alt="Add Peep"><Icon type="user-plus"/></button>
 				</div>
 				<ul>{user.map(::this.getUser)}</ul>
 			</div>
