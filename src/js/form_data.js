@@ -11,7 +11,7 @@ export default class FormView extends Component {
 	constructor() {
 		super();
 		this.state = {
-			preview: 'http://cumbrianrun.co.uk/wp-content/uploads/2014/02/default-placeholder.png'
+			preview: 'http://www.colorhexa.com/0f4c85.png'
 		}
 	}
 
